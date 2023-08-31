@@ -1,7 +1,14 @@
 /**
  * BitwiseOnChar
  */
+
+
 public class BitwiseOnChar {
+
+    public class Node {
+
+    }
+
 
     public static void main(String[] args) {
         char character = 'a';
