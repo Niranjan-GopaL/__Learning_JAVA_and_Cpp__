@@ -12,12 +12,12 @@ class BankAccount {
 
     // Method to deposit money into the account
     public void deposit(double amount) {
-    
+        this.balance += amount;
     }
-
+    
     // Method to withdraw money from the account
     public void withdraw(double amount) {
-    
+        this.balance -= amount;
     }
 
     // Method to get the current account balance
@@ -34,23 +34,28 @@ class BankAccount {
 
     // Method to transfer funds to another account
     public void transfer(BankAccount recipient, double amount) {
-    
+        this.balance -= amount;
+        recipient.balance += amount;
     }
 
     // Method to change the account holder's name
     public void changeAccountHolderName(String newHolderName) {
+        this.accountHolder = newHolderName;
     }
 
     // Method to check if the account is in overdraft
     public boolean isOverdraft() {
+        return this.balance == 0;
     }
-
+    
     // Method to apply interest to the account balance
     public void applyInterest(double interestRate) {
+        this.balance += interestRate/100 * this.balance;
     }
-
+    
     // Getter method for the account holder's name
     public String getAccountHolder() {
+        return this.accountHolder;
     }
 }
 
