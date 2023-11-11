@@ -1,6 +1,15 @@
-
-
 import java.util.*;
+
+
+/* TO do => 
+ 
+- better CID and PID names
+- private members
+- find out a way to pass values of hasmaps without making them public
+- make the code concise enough to have no need for lenghty comments
+
+
+*/
 
 
 
@@ -187,8 +196,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Entire customer interface is handled via this one Class 
-        CustomerManager customerManager = new CustomerManager();
+
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
@@ -200,23 +208,29 @@ public class Main {
             numOfCartsPerCustomer.add(input);
         }
 
+        
+        
         int m = sc.nextInt();
-
-
         while(m-- != 0){
 
             String line = sc.nextLine();
-
             String[] words = line.split(" ");
-
             int sizeOfInput = words.length ;
-
             System.out.println(sizeOfInput);
 
 
         }
 
 
+        sc.close();
+
+
+
+
+
+
+        // Entire customer interface is handled via this one Class 
+        // CustomerManager customerManager = new CustomerManager();
 
         // Customer person1 = customerManager.createCustomer("customer101");
         // Customer person2 = customerManager.createCustomer("customer102");
@@ -263,7 +277,5 @@ public class Main {
         // System.out.println("-------------------------------------------------------------------");
         // customerManager.displayAllCustomerInformation();
 
-
-        sc.close();
     }
 } 
