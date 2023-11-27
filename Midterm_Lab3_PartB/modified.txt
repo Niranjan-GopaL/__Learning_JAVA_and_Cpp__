@@ -1,0 +1,6 @@
+    public Book(){
+        availableCopies=0;
+        bookID =0;
+        title="";
+        author="";
+    }

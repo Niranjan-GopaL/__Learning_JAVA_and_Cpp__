@@ -3,6 +3,7 @@
         "string.h": "c",
         "stdio.h": "c",
         "iostream": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "*.tcc": "cpp"
     }
 }

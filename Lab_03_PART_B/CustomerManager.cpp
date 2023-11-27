@@ -63,7 +63,7 @@ public:
 
 
     void addItem(CartItem* item)       { items[item->getProductID()] = item; }
-    void removeItem(string productID) { items.erase(productID);            }
+    void removeItem(string productID)  { items.erase(productID);            }
 
     double calculateTotalPriceOfCart()  {
         double total = 0.0;
