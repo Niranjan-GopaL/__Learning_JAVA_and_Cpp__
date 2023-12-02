@@ -1,6 +1,6 @@
-
-
 // Abstract classes can be used for generalising
+
+
 /*
  
 abstract class Computer{
@@ -21,9 +21,29 @@ class Desktop extends Computer{
         System.out.println("Code methode of Desktop");
     }
 }
+*/ 
 
-*/
 
+
+
+/*
+                The above code is implemented using interfaces normally.
+
+                
+                -> a methode in [Dev class] can accept a [laptop] OR [desktop]
+
+                -> so how to achieve this ?
+
+                -> both laptop and desktop are COMPUTER
+                -> we create a computer INTERFACE and have lap and desktop IMPLEMENT this interface
+                
+                -> Both Laptop and Desktop are Computer
+                
+                -> so we create a Computer interface
+
+ 
+
+ */
 
 
 interface Computer {
@@ -46,6 +66,14 @@ class Desktop implements Computer{
     }
 }
 
+class Developer{
+
+    public void code(Computer computer){
+        computer.code();
+    }
+}
+
+
 
 public class LearningInterfaces{
 
@@ -56,9 +84,13 @@ public class LearningInterfaces{
         Computer lap = new Laptop();
         Computer desktop = new Desktop();
 
-        lap.code();
-        desktop.code();
+        Developer dev = new Developer();
+
+        dev.code(lap);
+        dev.code(desktop);
 
     }
 
 }
+
+
