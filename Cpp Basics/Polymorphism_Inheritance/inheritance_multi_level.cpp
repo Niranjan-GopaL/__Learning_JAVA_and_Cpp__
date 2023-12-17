@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
-
-
 /*
             PRETTY STRAIGHT FORWARD
 
@@ -19,7 +15,6 @@ using namespace std;
        [Z] <------ inherits Y; so by extension inherits [BOTH X AND Y]
 
 example below
-
 */
 
 

@@ -3,6 +3,8 @@ class CustomException extends Exception{
         super(string);
     }
 }
+
+
 public class ExampleException {
     private static void performCustomOperation(int value)throws CustomException{
         if(value < 10){

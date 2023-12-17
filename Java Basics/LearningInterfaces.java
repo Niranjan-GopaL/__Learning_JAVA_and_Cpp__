@@ -59,15 +59,15 @@ class Laptop implements Computer{
 
 }
 
-class Desktop implements Computer{
 
+class Desktop implements Computer{
     public void code() {
         System.out.println("Code methode of Desktop");
     }
 }
 
-class Developer{
 
+class Developer{
     public void code(Computer computer){
         computer.code();
     }
@@ -92,5 +92,3 @@ public class LearningInterfaces{
     }
 
 }
-
-

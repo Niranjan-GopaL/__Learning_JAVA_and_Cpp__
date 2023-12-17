@@ -2,13 +2,14 @@
 using namespace std;
 
 /*
-
  -> Inheritance
  -> Polymorphism
+
  -> Abstract Class and Interface/Virtual Function
+ -> dynamic and static casting to derived class
+
  -> Exception Handling
  -> Collection and STL
-
 */
 
 

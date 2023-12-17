@@ -4,7 +4,6 @@ using namespace std;
 
 
 class MenuItem{
-
 public:
     string name;
     double calories;
@@ -12,13 +11,12 @@ public:
     void print(){
         cout << name << "( " << calories << " cal )" << "\n";
     }
-
 };
 
 
 
-// normal implementaion
 
+// normal implementaion
 class DrinkItem{
 
 public:
@@ -38,7 +36,7 @@ public:
 
 
 // using inheritance the code becomes a lot more maintainable and strucutred
-// the derived class will have all the public properties of a base class and can add on top of it 
+// the derived class will have all the non-private properties of a base class and can add on top of it 
 
 
 // using inheritance
@@ -51,7 +49,6 @@ public:
     double cal_per_ounce(){
         return calories/ounces * 1.23 ;
     }
-
 };
 
 
@@ -65,7 +62,6 @@ int main() {
     fish.name = "fish";
 
     fish.print();
-
 
     
     Drink_Item mango_juice;
@@ -92,7 +88,4 @@ int main() {
 
     return 0;
 }
-
-
-
 

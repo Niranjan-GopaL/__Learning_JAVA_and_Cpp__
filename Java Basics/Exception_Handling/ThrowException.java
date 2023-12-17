@@ -12,5 +12,5 @@ public class ThrowException {
             System.out.println(e);
         }
     }
-    
 }
+    

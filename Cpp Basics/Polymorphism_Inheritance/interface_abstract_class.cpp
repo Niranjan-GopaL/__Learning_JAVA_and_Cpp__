@@ -53,6 +53,20 @@ int main(){
         new Tri(6,8),
     };
 
+    
+
+    int c; cin >> c;
+    vector<Shape*> a;
+    int s; 
+     while(c--  ){
+        cin >> s;
+        a.push_back(new Sq(s));     
+     }
+
+    Shape *shape1, *shape2, *shape3;
+
+
+
     for( int i= 0; i<5; i++){
         cout << "Area of the shape " << i << " " << shapes[i]->area() << "\n";
         shapes[i]->print();
@@ -64,18 +78,12 @@ int main(){
     // Shape *rect, *tri; <------ this is the TRUE POWER  
 
     /* 
-    
                 But the true power of abstract class is :-
 
                     -> you can group many similar things unde an `abstract class`
                     -> you can have pointers, references, etc of this class
                         -> which can be dynamically casted to derived class's
-
-
-
     */
-
-
 
     return 0;
 }

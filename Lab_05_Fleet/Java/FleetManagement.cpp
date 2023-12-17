@@ -299,6 +299,7 @@ int main() {
 
             getline(cin, input);
             stringstream ss(input);
+            
             vector<string> inputStrings;
             string word;
 
