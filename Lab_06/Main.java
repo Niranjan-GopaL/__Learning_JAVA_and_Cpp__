@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 
 
+
+
+
 interface Drawable {
     void draw();
 }
